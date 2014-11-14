@@ -6,6 +6,7 @@ public class HandScript : MonoBehaviour {
 	public GameObject elbow;
 	public GameObject wrist;
 
+
 	// Use this for initialization
 	void Start () {
 	
@@ -21,8 +22,8 @@ public class HandScript : MonoBehaviour {
 	}
 	void OnCollisionEnter (Collision col) {	
 		if (col.gameObject.name == "OurCylinder") {
-						print ("Captain, we had a collision!");
-						Destroy (col.gameObject);
-				}
+			print ("Captain, we had a collision!");
+			((CharacterScript)col.gameObject.GetComponent(typeof(CharacterScript))).hit(5);
+		}
 	}
 }

@@ -2,19 +2,18 @@
 using System.Collections;
 
 public class CharacterScript : MonoBehaviour {
-	public GameObject hand;
 	// Use this for initialization
+	public int hitPoints;
 	void Start () {
-	
+		this.hitPoints = 100;
 	}
-	
-	// Update is called once per frame
-	void OncollisionEnter (Collision col) {
-		{
-			if(col.gameObject.name == "Cylinder")
-			{
-				Destroy(col.gameObject);
-			}
+
+	public void hit(int damage) {
+		this.hitPoints -= damage;
+		print ("Cylinder hitpoints: " + this.hitPoints);
+		if (this.hitPoints <= 0) {
+				Destroy(this.gameObject);
 		}
-}
+	}
+
 }
