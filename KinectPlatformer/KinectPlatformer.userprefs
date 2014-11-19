@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\HandScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Asset\Shaders\Normal-Diffuse.shader">
     <Files>
-      <File FileName="Assets\Script\HandScript.cs" Line="26" Column="37" />
+      <File FileName="Assets\Asset\Shaders\Normal-Diffuse.shader" Line="1" Column="1" />
+      <File FileName="Assets\Script\HandScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\CharacterScript.cs" Line="1" Column="1" />
       <File FileName="Assets\PointManScript.cs" Line="1" Column="1" />
     </Files>
