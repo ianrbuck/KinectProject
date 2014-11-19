@@ -46,7 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraScript.cs" />
+     <Compile Include="Assets\PointManScript.cs" />
      <Compile Include="Assets\Script\CharacterScript.cs" />
+     <Compile Include="Assets\Script\GeneralScript.cs" />
      <Compile Include="Assets\Script\HandScript.cs" />
      <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
      <Compile Include="Assets\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />

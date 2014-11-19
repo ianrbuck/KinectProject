@@ -4,6 +4,7 @@ using System.Collections;
 public class CharacterScript : MonoBehaviour {
 	// Use this for initialization
 	public int hitPoints;
+
 	void Start () {
 		this.hitPoints = 100;
 	}
