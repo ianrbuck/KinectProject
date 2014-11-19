@@ -7,11 +7,13 @@ public class PointManScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		pointMan.renderer.enabled = false;
+		var allMyRenderers = GetComponentsInChildren<Renderer>();
+		foreach( Renderer rend in allMyRenderers) {
+			rend.enabled = false;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 }
