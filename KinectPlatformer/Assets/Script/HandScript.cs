@@ -5,6 +5,7 @@ using System.Collections;
 public class HandScript : MonoBehaviour {
 	public GameObject elbow;
 	public GameObject wrist;
+	public bool right;
 
 
 	// Use this for initialization
@@ -19,7 +20,11 @@ public class HandScript : MonoBehaviour {
 
 		transform.position = pos1;
 		this.transform.LookAt (pos2);
-		this.transform.Rotate (0, 90, 0);
+		if (right) {
+			this.transform.Rotate (0, 90, 0); //TODO: make it go upside down when right hand
+		} else {
+			this.transform.Rotate (0, 90, 0);
+		}
 	}
 	void OnCollisionEnter (Collision col) {	
 		if (col.gameObject.name == "OurCylinder") {
