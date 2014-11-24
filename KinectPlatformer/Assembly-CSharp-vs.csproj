@@ -47,6 +47,27 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CameraScript.cs" />
+     <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
+     <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
+     <Compile Include="Assets\KinectScripts\AvatarController.cs" />
+     <Compile Include="Assets\KinectScripts\Cubeman\PointManController.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsConstraint.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsFilter.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\ClippedLegsFilter.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\JointPositionsFilter.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\KinectHelper.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\SelfIntersectionConstraint.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\TimedLerp.cs" />
+     <Compile Include="Assets\KinectScripts\Filters\TrackingStateFilter.cs" />
+     <Compile Include="Assets\KinectScripts\KinectGestures.cs" />
+     <Compile Include="Assets\KinectScripts\KinectManager.cs" />
+     <Compile Include="Assets\KinectScripts\KinectWrapper.cs" />
+     <Compile Include="Assets\KinectScripts\Samples\GetJointPositionDemo.cs" />
+     <Compile Include="Assets\KinectScripts\Samples\LoadMainLevel.cs" />
+     <Compile Include="Assets\KinectScripts\Samples\MouseControl.cs" />
+     <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
+     <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
+     <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
      <Compile Include="Assets\PointManScript.cs" />
      <Compile Include="Assets\Script\CharacterScript.cs" />
      <Compile Include="Assets\Script\GeneralScript.cs" />
@@ -64,6 +85,7 @@
      <Compile Include="Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
      <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Asset\Models\Wreck-It Ralph\info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Admin/Documents/KinectProject/KinectPlatformer/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

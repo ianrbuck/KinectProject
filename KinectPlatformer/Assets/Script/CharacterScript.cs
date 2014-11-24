@@ -11,7 +11,7 @@ public class CharacterScript : MonoBehaviour {
 
 	public void hit(int damage) {
 		this.hitPoints -= damage;
-		print ("Cylinder hitpoints: " + this.hitPoints);
+		print (this.name + " hitpoints: " + this.hitPoints);
 		if (this.hitPoints <= 0) {
 				Destroy(this.gameObject);
 		}

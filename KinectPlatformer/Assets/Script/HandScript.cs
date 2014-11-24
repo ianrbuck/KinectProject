@@ -26,10 +26,7 @@ public class HandScript : MonoBehaviour {
 			this.transform.Rotate (0, 90, 0);
 		}
 	}
-	void OnCollisionEnter (Collision col) {	
-		if (col.gameObject.name == "OurCylinder") {
-			print ("Captain, we had a collision!");
-			((CharacterScript)col.gameObject.GetComponent(typeof(CharacterScript))).hit(5);
-		}
+	void OnCollisionEnter (Collision col) {
+		((CharacterScript)col.gameObject.GetComponent(typeof(CharacterScript))).hit(5);
 	}
 }
