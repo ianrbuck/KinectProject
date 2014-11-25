@@ -85,6 +85,7 @@
      <Compile Include="Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
      <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Asset\Models\Companion Cube\BLENDSWAP_LICENSE.txt" />
      <None Include="Assets\Asset\Models\Wreck-It Ralph\info.txt" />
   </ItemGroup>
   <ItemGroup>
