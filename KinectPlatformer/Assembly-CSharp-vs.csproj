@@ -67,6 +67,20 @@
      <Compile Include="Assets\KinectScripts\Samples\MouseControl.cs" />
      <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
      <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDevice.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRGamepadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRGridCube.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRHmd.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRMainMenu.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
      <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
      <Compile Include="Assets\PointManScript.cs" />
      <Compile Include="Assets\Script\CharacterScript.cs" />
@@ -83,10 +97,13 @@
      <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
      <Compile Include="Assets\Script\Kinect\KinectWrapper\KinectSensor.cs" />
      <Compile Include="Assets\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
+     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Asset\Models\Companion Cube\BLENDSWAP_LICENSE.txt" />
      <None Include="Assets\Asset\Models\Wreck-It Ralph\info.txt" />
+     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Admin/Documents/KinectProject/KinectPlatformer/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

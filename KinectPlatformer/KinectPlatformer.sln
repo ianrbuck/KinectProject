@@ -5,6 +5,8 @@ Project("{4487486A-F84D-FACF-2A02-5223DD4E045C}") = "KinectPlatformer", "Assembl
 EndProject
 Project("{4487486A-F84D-FACF-2A02-5223DD4E045C}") = "KinectPlatformer", "Assembly-CSharp.csproj", "{A325BBA3-DF0B-6128-631F-398D6BFD210F}"
 EndProject
+Project("{4487486A-F84D-FACF-2A02-5223DD4E045C}") = "KinectPlatformer", "Assembly-CSharp-Editor.csproj", "{0A8241EA-A829-BC2E-C791-86E3B3565830}"
+EndProject
 Project("{4487486A-F84D-FACF-2A02-5223DD4E045C}") = "KinectPlatformer", "Assembly-UnityScript-firstpass.unityproj", "{D9FE12BB-892D-CBB9-3FAC-365727F5A8C6}"
 EndProject
 Global
@@ -21,6 +23,10 @@ Global
 		{A325BBA3-DF0B-6128-631F-398D6BFD210F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A325BBA3-DF0B-6128-631F-398D6BFD210F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A325BBA3-DF0B-6128-631F-398D6BFD210F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8241EA-A829-BC2E-C791-86E3B3565830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8241EA-A829-BC2E-C791-86E3B3565830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8241EA-A829-BC2E-C791-86E3B3565830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8241EA-A829-BC2E-C791-86E3B3565830}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D9FE12BB-892D-CBB9-3FAC-365727F5A8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D9FE12BB-892D-CBB9-3FAC-365727F5A8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9FE12BB-892D-CBB9-3FAC-365727F5A8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																												GlobalSection(MonoDevelopProperties) = preSolution
+																														GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
