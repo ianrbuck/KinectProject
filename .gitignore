@@ -1,1 +1,3 @@
-**/KinectPlatformer/Library/**
+**/Library/**
+**/Library/**/*.*
+KinectPlatformer\Library\ScriptAssemblies\*.dll
