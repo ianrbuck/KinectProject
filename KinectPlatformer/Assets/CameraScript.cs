@@ -10,6 +10,6 @@ public class CameraScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = head.transform.position;
+		transform.position = head.transform.position - (transform.forward * 2);
 	}
 }

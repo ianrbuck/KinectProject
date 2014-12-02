@@ -15,15 +15,24 @@ public class HandScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 pos1 = elbow.transform.position;
-		Vector3 pos2 = wrist.transform.position;
+		Vector3 posElb = elbow.transform.position;
+		Vector3 posWri = wrist.transform.position;
 
-		transform.position = pos1;
-		this.transform.LookAt (pos2);
+		
+	
+		Vector3 vec = posWri - posElb;
+		//print ("vector : " + vec);
+
+		transform.position = posWri;
+
+		
+
 		if (right) {
-			this.transform.Rotate (0, 90, 0); //TODO: make it go upside down when right hand
-		} else {
-			this.transform.Rotate (0, 90, 0);
+			this.transform.LookAt (posElb);
+			this.transform.Rotate (-90, 0, 0); //TODO: make it go upside down when right hand
+		} else {		
+			this.transform.LookAt (posElb + (2* vec));
+			this.transform.Rotate (90, 0, 0);
 		}
 	}
 	void OnCollisionEnter (Collision col) {
