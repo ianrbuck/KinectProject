@@ -7,6 +7,7 @@ public class CharacterScript : MonoBehaviour {
 
 	void Start () {
 		this.hitPoints = 100;
+		gameObject.tag = "character";
 	}
 
 	public void hit(int damage) {
