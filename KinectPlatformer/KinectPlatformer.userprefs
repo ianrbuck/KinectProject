@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CameraScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\HandScript.cs">
     <Files>
-      <File FileName="Assets\CameraScript.cs" Line="30" Column="45" />
-      <File FileName="Assets\Script\HandScript.cs" Line="35" Column="27" />
       <File FileName="Assets\Script\HandsColliderScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\CameraScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\HandScript.cs" Line="44" Column="5" />
       <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="1" Column="1" />
       <File FileName="Assets\OVR\Scripts\OVRDevice.cs" Line="1" Column="1" />
       <File FileName="Assets\OVR\Scripts\OVRCamera.cs" Line="1" Column="1" />
