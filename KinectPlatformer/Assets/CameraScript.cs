@@ -23,8 +23,9 @@ public class CameraScript : MonoBehaviour {
 		}
 		if (pastOrientations [currentIndex].y - currentOrientation.y > 45
 			|| currentOrientation.y - pastOrientations [currentIndex].y > 45) {
-			((Creator)Camera.main.GetComponent(typeof(Creator))).Create();
 			print ("Rapid horizontal movement detected");
+			((Creator)Camera.main.GetComponent(typeof(Creator))).Create();
+
 		}
 		if (pastOrientations [currentIndex].x - currentOrientation.x > 45
 			|| currentOrientation.x - pastOrientations [currentIndex].x > 45) {
