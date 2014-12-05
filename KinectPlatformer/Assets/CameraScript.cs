@@ -9,7 +9,7 @@ public class CameraScript : MonoBehaviour {
 	public Vector3 currentOrientation;
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -23,11 +23,13 @@ public class CameraScript : MonoBehaviour {
 		}
 		if (pastOrientations [currentIndex].y - currentOrientation.y > 45
 			|| currentOrientation.y - pastOrientations [currentIndex].y > 45) {
+			((Creator)Camera.main.GetComponent(typeof(Creator))).Create();
 			print ("Rapid horizontal movement detected");
 		}
 		if (pastOrientations [currentIndex].x - currentOrientation.x > 45
 			|| currentOrientation.x - pastOrientations [currentIndex].x > 45) {
 			print ("Rapid vertical movement detected.");
 		}
+
 	}
 }
