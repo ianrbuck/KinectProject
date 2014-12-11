@@ -6,7 +6,7 @@ public class CharacterScript : MonoBehaviour {
 	public int hitPoints;
 
 	void Start () {
-		this.hitPoints = 100;
+		this.hitPoints = 25;
 		gameObject.tag = "character";
 	}
 
@@ -15,7 +15,8 @@ public class CharacterScript : MonoBehaviour {
 		print (this.name + " hitpoints: " + this.hitPoints);
 		if (this.hitPoints <= 0) {
 				Destroy(this.gameObject);
-		}
+				((Creator)Camera.main.GetComponent(typeof(Creator))).majCharact();	
+		}	
 	}
 
 }

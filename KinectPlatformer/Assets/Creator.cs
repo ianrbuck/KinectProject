@@ -6,45 +6,45 @@ public class Creator : MonoBehaviour {
 	public GameObject head;
 	private GameObject prefab = null;
 	private int numberCreated = 0;
+	private GameObject[] listChara;
+	private bool isFirstCall =true;
+	public void majCharact(){
+		listChara = GameObject.FindGameObjectsWithTag ("character");
+		print ("maj list character : " + listChara.Length);
+	}
+
 
 	public void Create () {
 		numberCreated++;
-		print ("theoritically create one more, total :" + numberCreated);
-		if (numberCreated % 10 == 0) {
-			int previousFail = 0;
+		if (isFirstCall) {
+			majCharact();
+			isFirstCall =false;
+		}
+		print ("create one more, total :" + numberCreated);
 			//camera visibility
 			Camera cam = Camera.main;
 			Plane[] planes = GeometryUtility.CalculateFrustumPlanes (cam);
 
-			GameObject[] listChara = GameObject.FindGameObjectsWithTag ("character");
 			//GameObject.FindObjectsOfType(typeof(CharacterScript));
 
 			//character selection
-			if (listChara.Length > 0) {
+			if (listChara.Length > 1) {
 					int characterType = Random.Range (0, listChara.Length - 1);
 					prefab = listChara [characterType];
 			}
 
+			float range = 3.0F;
 			//random position and creation of the object
-			Vector3 position = new Vector3 (Random.Range (-5.0F, 5.0F), 0, Random.Range (-5.0F, 5.0F));
+			Vector3 position = new Vector3 (Random.Range (head.transform.position.x - range, head.transform.position.x + range), 0, Random.Range (head.transform.position.z - range, head.transform.position.z + range));
 			GameObject newOne = Instantiate (prefab, position, Quaternion.identity) as GameObject;
-			int maxTry = 5;
 			// while object is visible destroy and crecreate it elsewhere ( timeout 12 try)
-			while (GeometryUtility.TestPlanesAABB (planes, newOne.collider.bounds) && (previousFail < maxTry )) {
+			if (GeometryUtility.TestPlanesAABB (planes, newOne.collider.bounds)) {
 					print ("in the view !");
 					Destroy (newOne);
-					previousFail ++;
-					if (previousFail < maxTry) {
-							print ("new try ");
-							newOne = Instantiate (prefab, position, Quaternion.identity) as GameObject;
-							position = new Vector3 (Random.Range (-10.0F, 5.0F), 0, Random.Range (-10.0F, 5.0F));
-					}
-			} 
-
-			if (! GeometryUtility.TestPlanesAABB (planes, newOne.collider.bounds)) {
+			}
+			else {
 				print ("out the view !");
 				newOne.transform.LookAt(head.transform.position);
 			}
-		}
 	}
 }
